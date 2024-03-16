@@ -16,18 +16,18 @@ private const val NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_play
 private const val begin = "https://image.tmdb.org/t/p/w500/"
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<Movie>()
-    private lateinit var rvMovies : RecyclerView
+    private lateinit var c_movies : RecyclerView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rvMovies = findViewById(R.id.rvMovies)
+        c_movies = findViewById(R.id.cinema_movies)
 
         val movieAdapter = MovieAdapter(this, movies)
-        rvMovies.adapter = movieAdapter
-        rvMovies.layoutManager = LinearLayoutManager(this)
+        c_movies.adapter = movieAdapter
+        c_movies.layoutManager = LinearLayoutManager(this)
 
         val client = AsyncHttpClient()
         client.get(NOW_PLAYING_URL, object: JsonHttpResponseHandler(){

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInto">
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="FOOD:"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/claory"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="150dp"
+        android:text="Calories:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_width="172dp"
+        android:layout_height="57dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/claorie_count"
+        android:layout_width="173dp"
+        android:layout_height="58dp"
+        android:layout_gravity="clip_horizontal|center|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="250dp"
+        android:text="Save!" />
+
+</FrameLayout>
